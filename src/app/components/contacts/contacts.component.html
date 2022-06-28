@@ -1,0 +1,32 @@
+<div id="Contact" class="pb-3">
+  <div class="title-container position-relative w-100">
+    <div class="text-center h2 py-3 title">Let's Connect</div>
+    <div
+      class="position-absolute title-underline start-50 translate-middle"
+    ></div>
+  </div>
+  <div class="justify-content-center row w-100 mx-auto my-5 gap-2">
+    <div
+      class="col-lg-2 cards col-md-3 col-sm-4 my-2"
+      *ngFor="let item of socialMedia"
+    >
+      <a
+        class="text-decoration-none"
+        href="{{ item.link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="card contact-card d-flex justify-content-center align-items-center"
+        >
+          <div class="card-body d-flex align-items-center gap-2 py-3">
+            <p class="{{ item.icon }} mb-0 fs-3"></p>
+            <span>
+              <p class="mb-0 fw-bold">{{ item.name }}</p>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

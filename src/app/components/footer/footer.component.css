@@ -1,0 +1,10 @@
+.credits,
+.copy {
+  color: var(--color-2);
+}
+@media screen and (max-width: 400px) {
+  .cred-container,
+  .copy {
+    font-size: calc(0.9rem + 0.6vw) !important;
+  }
+}

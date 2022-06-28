@@ -1,0 +1,50 @@
+<div id=" About">
+  <div class="title-container position-relative w-100">
+    <div class="text-center h2 py-3 title">Who Am I ?</div>
+    <div
+      class="position-absolute title-underline start-50 translate-middle"
+    ></div>
+  </div>
+  <div class="px-5 py-4 about-section">
+    <div class="row w-100 gap-2 about-content">
+      <div
+        id="about-me"
+        class="col-lg-7 col-md-12 d-flex mt-4 px-3 flex-column about-me"
+      >
+        <div class="name fs-3 my-2">Toma jabishvili</div>
+        <h3 class="my-3 desc-about me pe-4">
+          Hi, I am a student and a Web Developer, Currently Pursuing BCA.
+          <br />I'm always trying to learn something new and upgrade my skills.
+          <br />I do my work with creativity and primarily focus on results
+        </h3>
+        <div
+          class="others row w-100 d-flex justify-content-center align-items-center"
+        >
+          <div
+            *ngFor="let item of otherDetails; let i = index"
+            class="col-md-5 col-sm-12 card d-flex flex-column card-others p-2 mx-3 px-3 my-2"
+          >
+            <div
+              class="d-flex my-2 justify-content-center align-items-center gap-2"
+            >
+              <span class="{{ item.icon }}"></span>
+              <span>{{ item.key }}</span>
+            </div>
+            <div class="text-center">
+              {{ item.value }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="img" class="col-lg-4 col-md-12 my-4 mt-3">
+        <div class="d-flex justify-content-center">
+          <span class="position-relative">
+            <div
+              class="position-absolute overlay end-0 start-0 top-0 bottom-0"
+            ></div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
