@@ -1,0 +1,22 @@
+.portfolio-page {
+  background: var(--bg-color);
+}
+.btn-back {
+  bottom: 30px;
+  right: 20px;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  color: var(--color-2);
+  background: var(--bg-color);
+  box-shadow: 5px 5px 10px #1e1e1e, -5px -5px 10px #2a2a2a;
+  transition: 0.3s ease-in-out;
+  z-index: 30;
+}
+.btn-back:hover {
+  box-shadow: inset 5px 5px 10px #1e1e1e, inset -5px -5px 10px #2a2a2a;
+}
+.btn-back:hover i {
+  color: var(--color-6);
+}

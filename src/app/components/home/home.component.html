@@ -1,0 +1,37 @@
+<div #home id="home">
+  <div class="container home-details text-center">
+    <div class="name-container">
+      <h1 id="salutation" class="salutation">HI, I'm</h1>
+    </div>
+    <div class="name-container">
+      <h1 id="name" class="name">Toma jabishvili</h1>
+    </div>
+    <div class="name-container">
+      <h5 id="sub" class="sub-details">And i'm a Software Developer.</h5>
+    </div>
+  </div>
+
+  <div>
+    <button routerLink="/portfolio" type="button" class="btn btn-dark ttt">
+      <a routerLink="/portfolio" class="text-decoration-none">
+        <a class="nav-items fw-bold fs-5">PORTFOLIO</a>
+      </a>
+    </button>
+  </div>
+
+  <div #social id="social" class="social-links">
+    <div
+      class="d-flex flex-column align-items-center gap-2"
+      *ngFor="let item of socialMedia; let i = index"
+    >
+      <a
+        id="icon-{{ i + 1 }}"
+        href="{{ item.link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="{{ item.icon }} fs-2"></span>
+      </a>
+    </div>
+  </div>
+</div>

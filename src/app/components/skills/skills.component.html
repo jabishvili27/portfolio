@@ -1,0 +1,27 @@
+<div id="Skills">
+  <div class="title-container position-relative w-100">
+    <div class="text-center h2 py-3 title">What I Know ?</div>
+    <div
+      class="position-absolute title-underline start-50 translate-middle"
+    ></div>
+  </div>
+  <div id="skill" class="row w-100 justify-content-center px-3 skill-cont">
+    <div
+      class="col-lg-3 col-md-5 col-sm-10 card d-flex flex-column card-skills cards p-2 mx-3 px-3 my-2"
+      *ngFor="let item of mySkills; let i = index"
+      id="card-{{ i }}"
+    >
+      <div class="d-flex my-2 justify-content-center align-items-center gap-2">
+        <span class="{{ item.icon }}"></span>
+        <span>{{ item.key }}</span>
+      </div>
+      <div class="text-center">
+        {{ item.value }}
+      </div>
+      <div class="card-body">
+        <div class="text-center fs-5 fw-bold">{{ item.skill }}</div>
+        <div class="text-center">{{ item.level }}</div>
+      </div>
+    </div>
+  </div>
+</div>
