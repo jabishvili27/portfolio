@@ -2,7 +2,7 @@
 
 # Live demo
 
-[🔗 portfolio-tomajabishvili ](https://portfolio-tomajabishvili.netlify.app/)
+[🔗https://stupendous-shortbread-4f8e50.netlify.app/)
 
 
 
